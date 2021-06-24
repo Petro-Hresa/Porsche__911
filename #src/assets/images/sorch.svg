@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 29" width="28" height="29">
+	<title>search</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ff4f00 } 
+	</style>
+	<g id="search">
+		<path id="Rectangle 5" fill-rule="evenodd" class="shp0" d="M11 0C17.08 0 22 4.92 22 11C22 13.93 20.86 16.59 18.99 18.56L27.01 26.58L25.58 28.01L17.47 19.9C15.65 21.22 13.42 22 11 22C4.92 22 0 17.08 0 11C0 4.92 4.92 0 11 0ZM2 11C2 15.97 6.03 20 11 20C15.97 20 20 15.97 20 11C20 6.03 15.97 2 11 2C6.03 2 2 6.03 2 11Z" />
+	</g>
+</svg>

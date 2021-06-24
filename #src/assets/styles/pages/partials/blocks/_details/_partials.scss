@@ -1,0 +1,103 @@
+.details {
+
+	/* .details__partials */
+	&__partials {
+		@extend .partials-padding;
+		background: $background-2;
+		padding-bottom: 144px !important;
+	}
+	/* .details__button */
+	&__button {
+		@extend .content-uppercase;
+		width: 250px;
+		height: 68px;
+		filter: drop-shadow(0px 20px 25px rgba(0,0,0,0.25));
+		background-color: $BackgroundBtn-1;
+		border: 3px solid $BackgroundBtn-2;
+		color:$colorBtn;
+		font-size: 14px;
+      letter-spacing: 8px;
+      margin-top: 33px;
+      cursor:pointer;
+      outline:none;
+
+	}
+
+	/* .details__wrap-arrows */
+	&__arrows {
+		margin-top: 67px;
+		display: flex;
+		 @media screen and (max-width: $xl){
+		 	display: none !important;
+		 }
+		  @media screen and (max-width: $md){
+		 	display: block !important;
+		 	position: absolute;
+		 	width: 100%;
+		 	display: flex !important;
+		 	justify-content: space-between;
+		 	margin-top: 17%;
+		 }
+	}	
+	&__wrap-arrow{
+		padding: 10px 0;
+		cursor:pointer;
+		margin-right: 60px;
+
+	}
+
+	/* .details__arrow */
+	&__arrow {
+		width: 60px;
+		height: 2px;
+		background-color:$background-1;
+		display: inline-block;
+		position: relative;
+
+		&:before,
+		&:after{
+        content:'';
+        width: 10px;
+        height: 2px;
+        background-color:$background-1;
+        position: absolute;
+        z-index: 0;
+		}
+  
+
+		&_pre{
+		   @media screen and (max-width: $md){
+			  margin-left: 40px;
+		   }
+
+
+		    &:before{
+		    	left: -2px;
+		    	top: 3px;
+	      	transform:rotate(45deg);
+	      	z-index: 10;
+
+	      }
+	      &:after{
+	      	left: -2px;
+	          bottom: 3px;
+	      	transform:rotate(-45deg)
+	      }
+			
+		}
+
+		&_next{
+		    &:before{
+		    	right: -2px;
+		    	top:3px;
+	      	transform:rotate(-45deg)
+	      }
+
+	       &:after{
+	       	right: -2px;
+	       	bottom: 3px;
+	      	transform:rotate(45deg)
+	      }
+		}
+	}
+}

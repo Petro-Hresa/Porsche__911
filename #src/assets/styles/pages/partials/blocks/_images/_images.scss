@@ -1,0 +1,69 @@
+.images {
+	 min-width: 50%;
+	 max-height: 1100px;
+	 display: flex;
+	 flex-direction:column;
+	 position: relative;
+	 	@media screen and (max-width: $md){
+			min-height: 100vh;
+		}
+
+
+	 &__wrap-img{
+	 	// flex: 1 1;
+		//  width: auto;
+	 	height: 100%;
+	 }
+
+	/* .images__img */
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+		object-position: center;
+
+		@media screen and (max-width: $md){
+	      object-position: left;
+		}
+		
+	}
+
+	&__wrap-slider{
+		display: block;
+	}
+
+  @media screen and (max-width: $xl) {
+		&__arrow-down{
+			position: absolute;
+			transform:translate(-50%);
+			width: 25px;
+			height: 25px;
+			left: 50%;
+			bottom: 10%;
+			display: block;
+			 
+		   &:before,
+		   &:after{
+           content:'';
+           position: absolute;
+           width: 100%;
+           height: 2px;
+           background-color: $background-1;
+           bottom: 0;
+		   }
+
+		   &:before{
+		   	left: 32%;
+		   	transform: rotate(-45deg)
+		   }
+
+		   &:after{
+		    	right: 32%;
+		    	transform: rotate(45deg)
+		   }
+
+
+	   }
+	}
+}
+	

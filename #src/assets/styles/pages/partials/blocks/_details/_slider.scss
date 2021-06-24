@@ -1,0 +1,72 @@
+.slider {
+	 height: 155px;
+	 display: flex;
+	 justify-content: flex-end;
+	 background-color: $background-1;
+	 @media screen and (max-width: $md){
+	 	 min-height: 300px;
+	 	  background-color: transparent;
+        position: relative;
+	 }
+
+	&__inner{
+		bottom: 75px;
+      right: 60px;
+      position: relative;
+		min-width: 900px !important;
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      @media screen and (max-width: $xl) {
+      	min-width: 100% !important;
+      	bottom: 0;
+         right: 0;
+      }
+      @media screen and (max-width: $md){
+          display: flex;
+          justify-content: center;
+
+      }
+
+	}
+
+	&__item{
+		height: 190px;
+		  @media screen and (max-width: $md){
+		  	width: 300px;
+         position:absolute;
+         min-height: 100%;
+
+      }
+	}
+
+	&__item>img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top;
+      @media screen and (max-width: $md){
+           position:absolute;
+      }
+	}
+
+
+	&__item_active{
+      @media screen and (min-width: $md){
+			position: relative;
+			display: block;
+	      bottom: 16px;
+	      border-top: 10px solid $background-1;
+      }
+      @media screen and (max-width: $md){
+        z-index: 100;
+      }
+	}
+	
+	&__read-more{
+		min-width: 100% !important;
+		right: 0;
+		bottom: 0;
+	}
+
+}
+

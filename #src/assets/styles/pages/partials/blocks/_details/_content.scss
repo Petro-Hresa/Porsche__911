@@ -1,0 +1,86 @@
+.details {
+
+	  
+	/* .details__contant */
+	&__contant {
+		max-width: 41.688rem;
+		margin: 115px 3.563rem 0;
+		@media screen and(max-width: $xl) {
+			max-width: 100%;
+		}
+	}
+
+	/* .details__brand */
+	&__brand {
+		@extend .content-padding;
+		@extend .content-uppercase;
+		font-size: 16px;
+		letter-spacing: 10px;
+		margin: 0 0 25px 0;
+	}
+
+	/* .details__brand_greey */
+	&__brand_greey {
+		color:$colorText-2;
+	}
+
+	/* .details__brand_red */
+	&__brand_red {
+		color:$colorText-3;
+	}
+
+	/* .details__title */
+	&__title {
+		padding: 0  3.313rem 0 2.875rem;
+		font-size: calc(30px + 40 * calc(100vw / 1680));
+		letter-spacing: -1px;
+		line-height: 85px;
+		color: #ffffff;
+		font-weight: 300;
+		font-family: $fontFamily-2;
+		border-left: 7px solid $background-1;
+		margin-bottom: 33px;
+
+		@media screen and (max-width: $md) {
+            font-size: calc(30px + calc(40 + 40 * .7) * calc((100vw - 320px) / 1680));
+        }
+
+		@media screen and (max-width:1680px) {
+            // font-size: 40px;
+        }
+
+        @media screen and (max-width: $xl) {
+           	line-height: 75px;
+        }
+
+         @media screen and (max-width: $md) {
+           	line-height: 55px;
+        }
+	}
+
+	&__title_bold{
+     font-family: $fontFamily-1;
+	}
+
+	/* .details__text */
+	&__text {
+		@extend .content-padding;
+		font-size: 19px;
+		line-height: 38px;
+		overflow: hidden;
+	}
+
+	&__inner{
+		min-height: 133px;
+	}
+
+	/* .details__paragraph */
+	&__paragraph {
+		margin-top: 0;
+	}
+	
+	&__read-more{
+		display: none;
+
+	}
+}

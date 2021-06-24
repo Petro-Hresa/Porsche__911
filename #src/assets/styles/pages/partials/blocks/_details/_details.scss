@@ -1,0 +1,12 @@
+@import "_content";
+@import "_partials";
+@import "_slider";
+
+.details {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	max-height: 68.75rem;
+    min-width: 50%;
+    border: 1px solid red;
+}
